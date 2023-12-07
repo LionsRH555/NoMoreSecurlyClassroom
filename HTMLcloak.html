@@ -49,7 +49,7 @@
     <button onclick="blank(document.getElementById('url').value);">Blank!</button>
   </div>
   <script>
-    //credit to topvaz for creating this
+    //credit to topvaz for creating this + me for the favicon
     function blank(url) {
       let win = window.open();
       win.document.body.style.margin = '0';
@@ -61,6 +61,14 @@
       iframe.style.margin = '0';
       iframe.src = url;
       win.document.body.appendChild(iframe);
+      var fav = win.document.createElement('link');
+      fav.setAttribute("rel", "icon");
+      fav.setAttribute("type", "image/x-icon");
+      fav.setAttribute("href", "https://ssl.gstatic.com/classroom/favicon.png");
+      win.document.querySelector("head").appendChild(fav);
+      var tit = win.document.createElement('title');
+      tit.innerHTML = "Home";
+      win.document.querySelector("head").appendChild(tit);
     }
   </script>
 </body>
